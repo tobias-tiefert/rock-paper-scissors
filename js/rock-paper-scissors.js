@@ -39,13 +39,14 @@ function getFirstLetterLowerCase(string){
     let newString = string.toLowerCase();
     return newString.slice(0,1);
 };
+let computerChoice = "scissors";
+let humanChoice = "rock"
 */
 let computerChoice = getComputerChoice();
 let humanChoice = getHumanChoice();
+
 console.log(humanChoice);
 console.log(computerChoice);
-
-
 
 function getResult(humanChoice, computerChoice){
     if (humanChoice === computerChoice){
@@ -59,7 +60,7 @@ function getResult(humanChoice, computerChoice){
     } else if (humanChoice === "paper"){
         if (computerChoice === "scissors"){
             console.log("The computer wins")
-        } else if (computerChoice === "paper"){
+        } else if (computerChoice === "rock"){
             console.log("You win")
         }
     } else if (humanChoice === "scissors"){
