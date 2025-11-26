@@ -425,5 +425,7 @@ ul.points li{
     .btn, a.btn{
         padding: 0.7rem 2rem;
     }
-    
+    #score.extra-margin{
+        margin-bottom: 8rem;
+    }
 }

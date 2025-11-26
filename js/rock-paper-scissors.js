@@ -173,7 +173,7 @@ function checkResult(){
     if(buttonAdded === false){
         buttonAdded = true; 
         buttonContainer.classList.add("btn-container-bg-fix");
-        score.style.marginBottom= "8rem" ;
+        score.classList.add("extra-margin");
 
         if(round < 5){
         round++;
@@ -199,7 +199,7 @@ function checkResult(){
 function startNewRound(){
     userDidChoose = false;
     buttonContainer.classList.remove("btn-container-bg-fix");
-    score.style.marginBottom= "0" ;
+    score.classList.remove("extra-margin");
     let buttonRemove = document.querySelector("a.btn");
     updateInnerHTML(rounds, `Round ${round}<span> of 5</span>`)
     scissors.classList.remove("user-choice");
