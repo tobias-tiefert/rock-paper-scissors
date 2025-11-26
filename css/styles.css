@@ -398,10 +398,18 @@ ul.points li{
      .rounds{
         order: 1;
      }
+     ul#game-options li img{
+        margin-bottom: 0;
+
+    }
 
 }
 @media (max-width: 460px) {
     .message{
         font-size: 1.5rem;
     }
+    .btn, a.btn{
+        padding: 0.7rem 2rem;
+    }
+    
 }

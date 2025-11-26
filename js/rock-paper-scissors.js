@@ -209,6 +209,7 @@ function startNewRound(){
     paper.classList.remove("computer-choice");
     paper.classList.remove("not-choosen");
     buttonContainer.removeChild(buttonRemove);
+    updateText(messageDiv, messageStart)
     buttonAdded = false;
     playRound()
 }
