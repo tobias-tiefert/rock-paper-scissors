@@ -402,6 +402,17 @@ ul.points li{
         margin-bottom: 0;
 
     }
+    #btn-container.btn-container-bg-fix{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--gruen-dunkel);
+        left: 0;
+        padding: 2rem 0;
+        margin-bottom: 0;
+    }
+    
+    
 
 }
 @media (max-width: 460px) {

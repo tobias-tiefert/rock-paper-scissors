@@ -171,6 +171,8 @@ function checkResult(){
     let buttonNextRound = document.createElement("a");
     if(buttonAdded === false){
         buttonAdded = true; 
+        buttonContainer.classList.add("btn-container-bg-fix");
+
         if(round < 5){
         round++;
         buttonNextRound.textContent = "Next round";
@@ -194,6 +196,7 @@ function checkResult(){
 }
 function startNewRound(){
     userDidChoose = false;
+    buttonContainer.classList.remove("btn-container-bg-fix");
     let buttonRemove = document.querySelector("a.btn");
     updateInnerHTML(rounds, `Round ${round}<span> of 5</span>`)
     scissors.classList.remove("user-choice");
