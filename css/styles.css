@@ -130,6 +130,7 @@ main{
     padding: 0.7rem 3rem;
     border-radius: 2rem;
     text-decoration: none;
+    text-align: center;
     transition: all 0.2s ease-out 0s;
     box-shadow: 0 24px 34px 0 rgba(0,0,0,0.14),
                 0 24px 20px -15px rgba(0,0,0,0.3);
@@ -180,8 +181,8 @@ ul#game-options li{
     height: 28vw;
     max-width: 17rem;
     max-height: 22rem;
-    min-width: 10rem;
-    min-height: 12.5rem;
+    min-width: 8rem;
+    min-height: 10rem;
 
     
     box-shadow: 0 24px 34px 0 rgba(0,0,0,0.14),
@@ -209,7 +210,7 @@ ul#game-options li.not-choosen:hover
 ul#game-options li img{
     height: 18vw; 
     max-height: 13.5rem;
-    min-height: 7.4rem;
+    min-height: 6rem;
     width: auto;
     object-fit: contain;
     margin-bottom: 1.5rem;
