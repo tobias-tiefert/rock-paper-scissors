@@ -34,6 +34,7 @@ const rock          = document.querySelector("li#rock");
 const paper         = document.querySelector("li#paper");
 const scissors      = document.querySelector("li#scissors");
 const rounds        = document.querySelector(".rounds");
+const score        = document.querySelector("#score");
 let humanClick      = undefined;
 let computerClick   = undefined;
 let computerChoice  = "";
@@ -172,6 +173,7 @@ function checkResult(){
     if(buttonAdded === false){
         buttonAdded = true; 
         buttonContainer.classList.add("btn-container-bg-fix");
+        score.style.marginBottom= "8rem" ;
 
         if(round < 5){
         round++;
@@ -197,6 +199,7 @@ function checkResult(){
 function startNewRound(){
     userDidChoose = false;
     buttonContainer.classList.remove("btn-container-bg-fix");
+    score.style.marginBottom= "0" ;
     let buttonRemove = document.querySelector("a.btn");
     updateInnerHTML(rounds, `Round ${round}<span> of 5</span>`)
     scissors.classList.remove("user-choice");

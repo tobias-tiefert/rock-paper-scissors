@@ -410,7 +410,10 @@ ul.points li{
         left: 0;
         padding: 2rem 0;
         margin-bottom: 0;
+        box-shadow: 0 -24px 34px 0 rgba(0,0,0,0.14),
+                0 -24px 20px -15px rgba(0,0,0,0.3);
     }
+
     
     
 
