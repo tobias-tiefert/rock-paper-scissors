@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're playing rock, paper, scissors </title>
+    <script src="js/rock-paper-scissors.js"  defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <div class="shadow">
+        <div class="top top-game">
+            <div class="rounds">
+                Round 1<span> of 5</span>
+            </div>
+            <div class="message">
+                choose your weapon
+            </div>
+            <a id="quit" href="index.html">
+                Quit game
+            </a>
+        </div> <!-- ENDE: .top -->
+        <main >
+            <ul id="game-options">
+                <li id="rock">
+                    <img id="rock-img" src="img/rock.webp" alt="Image of a rock with nordic runs">
+                    rock
+                </li>
+                <li id="paper" >
+                    <img id="paper-img" src="img/paper.webp" alt="Image of a paper roll">
+                    paper
+                </li>
+                <li id="scissors" >
+                    <img id="scissors-img" src="img/scissors.webp" alt="Image of scissors">
+                    scissors
+                </li>
+            </ul>
+
+        </main>
+        <div id="btn-container">
+
+        </div>
+        <div id="score">
+            <h2>Score</h2>
+            <div id="computer-score">
+                <div class="name computer">
+                    Servar
+                </div>
+                <ul id="computer-points" class="points">
+                </ul>
+            </div>
+            <div id="human-score">
+                <div class="name human">
+                    You
+                </div>
+                <ul id="user-points" class="points">
+                </ul>
+            </div>
+        </div><!-- Ende Score-->
+    </div> <!-- Ende Shadow-->
+    
+    
+</body>
+</html>

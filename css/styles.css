@@ -1,0 +1,406 @@
+*{
+  box-sizing: border-box;
+}
+
+/* --- FARBEN ---*/
+:root {
+  --gelb: #FFDE5C;
+  --gelb-heller: #FFE57E;
+  --gelb-dunkel: #D9BC47;
+  --gruen: #1A6E68  ;
+  --gruen-hell: #A1C9C5;
+  --gruen-dunkel:#143934;
+  --braun-dunkel: #453E25;
+  --braun-mittel: #91702F;
+  --braun-hell:#E3DBCC;
+  --weiss: #ffffff;
+  --schwarz: #232323;
+}
+::selection {
+  background: var(--gelb); /* WebKit/Blink Browsers */ 
+  color: var(--schwarz);
+}
+::-moz-selection {
+  background: var(--gelb);  /* Gecko Browsers */ 
+  color: var(--schwarz);
+}
+body{
+    background-color: var(--gruen);
+    background-image: url("../img/pattern-viking.webp");
+    background-size: 300px;
+    margin: 0;
+    padding: 0 ;
+    display: flex;
+    color: var(--weiss);
+    font-family: Helvetica,  Arial, sans-serif;
+    font-weight: 400;
+    
+}
+.shadow{
+    
+    min-width: 100vw;
+    min-height: 100vh;
+    box-shadow: inset 0 0  100px 60px rgba(0,0,0,0.3);
+    padding: 2rem;
+}
+
+h1, h2, h3{
+    font-family: "Caesar Dressing", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: var(--schwarz);
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+    width: 100%;
+    min-height: 88px;
+}
+.message{
+    font-family: "Caesar Dressing", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: var(--weiss);
+    background-color: var(--schwarz);
+    padding: 1rem 3rem;
+    border-radius: 2.5rem;
+    max-height: 81px;
+
+
+}
+.placeholder{
+    width: 10rem;
+}
+#logo{
+    font-family: "Caesar Dressing", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--weiss);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 55vh;
+    margin-bottom: 2rem;
+}
+
+.text{
+    padding: 0.5rem 2rem 1rem;
+}
+.text p{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: var(--braun-dunkel);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.info-box img{
+    border-radius: 2rem 0 0 2rem;
+    width: 50%;
+    height: 25rem;
+}
+.info-box{
+    background-color: var(--weiss);
+    border-radius: 2rem;
+    min-width: 10rem;
+    max-width: 52rem ;
+    display: flex;
+    margin-bottom: 3rem;
+    box-shadow: 0 24px 34px 0 rgba(0,0,0,0.14),
+                0 24px 20px -15px rgba(0,0,0,0.3);
+}
+.btn, a.btn{
+    font-family: "Caesar Dressing", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    color: var(--schwarz);
+    font-size: 2rem;
+    background-color: var(--gelb);
+    padding: 0.7rem 3rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: all 0.2s ease-out 0s;
+    box-shadow: 0 24px 34px 0 rgba(0,0,0,0.14),
+                0 24px 20px -15px rgba(0,0,0,0.3);
+}
+.btn:hover, a.btn:hover{
+    transform: translateY(-20px);
+    background-color: var(--gelb-heller);
+    color: var(--schwarz);
+    box-shadow: 0 24px 34px 0 rgba(0,0,0,0.14),
+                0 45px 20px -10px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.rounds{
+    font-family: "Caesar Dressing", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: var(--weiss);
+    font-size: 2rem;
+}
+.rounds span{
+    font-size: 1.5rem;
+}
+a{
+    font-family: "Caesar Dressing", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: var(--weiss);
+    font-size: 1.5rem;
+}
+a:hover{
+    color: var(--gelb);
+}
+ul#game-options{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3rem;
+}
+ul#game-options li{
+    margin: 0;
+    list-style: none;
+    background-color: var(--weiss);
+    border-radius: 2rem;
+    display: flex;
+    font-family: "Caesar Dressing", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: var(--schwarz);
+    font-size: 2rem;
+    width: 22vw;
+    height: 28vw;
+    max-width: 17rem;
+    max-height: 22rem;
+    min-width: 10rem;
+    min-height: 12.5rem;
+
+    
+    box-shadow: 0 24px 34px 0 rgba(0,0,0,0.14),
+                0 24px 20px -15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem ;
+    transition: all 0.2s ease-out 0s;
+}
+ul#game-options li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 24px 34px 0 rgba(0,0,0,0.14),
+                0 45px 20px -10px rgba(0,0,0,0.3);
+}
+ul#game-options li.computer-choice:hover,
+ul#game-options li.user-choice:hover,
+ul#game-options li.same-choice:hover,
+ul#game-options li.not-choosen:hover
+{
+    transform: none;
+    cursor: not-allowed;
+}
+ul#game-options li img{
+    height: 18vw; 
+    max-height: 13.5rem;
+    min-height: 7.4rem;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+ul#game-options li.user-choice, .user-choice{
+    background-color: var(--gruen-hell);
+    border: 13px solid var(--gruen-dunkel);
+}
+ul#game-options li.user-choice::before{
+    content: "Your choice";
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--weiss);
+    background-color: var(--gruen-dunkel);
+    margin: -3.5rem 0 6.5rem;
+    position: absolute;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+}
+ul#game-options li.computer-choice, .computer-choice{
+    background-color: var(--braun-hell);
+    border: 13px solid var(--braun-mittel);
+}
+ul#game-options li.computer-choice::before{
+    content: "Servar's choice";
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--weiss);
+    background-color: var(--braun-mittel);
+    margin: -3.5rem 0 6.5rem;
+    position: absolute;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+}
+ul#game-options li.same-choice, .same-choice{
+    border-left: 13px solid var(--braun-mittel);
+    border-top: 13px solid var(--braun-mittel);
+    border-right: 13px solid var(--gruen-dunkel);
+    border-bottom: 13px solid var(--gruen-dunkel);
+    background-color: var(--gruen-hell);
+    background-image: url(../img/brow-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ul#game-options li.same-choice::before{
+    content: "You both choose";
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--weiss);
+    background-color: var(--braun-mittel);
+    margin: -3.5rem 0 6.5rem;
+    position: absolute;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+}
+
+#score{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: fixed;
+    bottom:2rem;
+    left: 2rem;
+}
+#score h2{
+    color: var(--weiss);
+    font-size: 2rem;
+    margin: 0;
+}
+#computer-score, #human-score{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.name{
+    font-weight: bold;
+    background-color: var(--schwarz);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    width: 7rem;
+    text-align: center  ;
+}
+.computer{
+    background-color: var(--braun-mittel);
+}
+.human{
+    background-color: var(--gruen-dunkel);
+}
+ul.points{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 0.6rem;
+}
+ul.points li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: var(--weiss);
+    border-radius: 0.5rem;
+}
+#btn-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+/* MOBILE VARIANTE*/
+@media (max-width: 860px) {
+    .top{
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    .message{
+        font-size: 2rem;
+        padding: 0.7rem 2rem;
+        text-align: center;
+        max-height: 60px;
+
+    }
+    .info-box img{
+        border-radius: 2rem 2rem 0 0;
+        width: 100%;
+        height: 18rem;
+    }
+    .info-box{
+        flex-direction: column;
+        max-width: 30rem;
+        
+    }
+    ul#game-options {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    ul#game-options li{
+        font-size: 1.5rem;
+        padding: 1rem 0.5rem;
+    }
+    ul#game-options li img{
+        margin-bottom: 0.5rem;
+    }
+     ul#game-options{
+        gap: 2rem;
+     }
+     .message{
+        margin-left: auto;
+        margin-right: auto;
+     }
+     .top-game{
+        flex-wrap: wrap;
+        flex-direction: row;
+     }
+     ul#game-options li.user-choice::before,
+     ul#game-options li.computer-choice::before,
+     ul#game-options li.same-choice::before{
+        margin-top: -2rem;
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+     }
+     ul#game-options li.user-choice,
+     ul#game-options li.computer-choice,
+     ul#game-options li.same-choice{
+        border-width: 7px;
+     }
+     #score{
+        position: inherit;
+     }
+
+
+}
+@media (max-width: 706px) {
+    #quit{
+        order: 2;
+     }
+     .message{
+        order:3;
+     }
+     .rounds{
+        order: 1;
+     }
+
+}
+@media (max-width: 460px) {
+    .message{
+        font-size: 1.5rem;
+    }
+}
