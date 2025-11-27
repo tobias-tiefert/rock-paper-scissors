@@ -109,6 +109,7 @@ main{
     border-radius: 2rem 0 0 2rem;
     width: 50%;
     height: 25rem;
+    background-color: var(--gruen-dunkel);
 }
 .info-box{
     background-color: var(--weiss);
